@@ -1,0 +1,160 @@
+.attribution { font-size: 11px; text-align: center; margin-top: 30px;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background: linear-gradient(180deg, #AF68EA 0%, #795EDF 100%);
+}
+
+.main-wrapper {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 48px 24px;
+  width: 327px;
+}
+
+.faq-heading {
+  margin-top: 90px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.label-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ============ IMAGES ============ */
+
+.imagery {
+  position: relative;
+}
+
+.main-image {
+  position: absolute;
+  width: 236.85px;
+  top: -155px;
+  left: 20px;
+}
+
+.shadow {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+}
+
+.main-image-lg, .shadow-lg, .box-image {
+  display: none;
+}
+
+/* ============ SPOILER ============ */
+
+/* Hide the checkbox */
+.question-toggle {
+    display: none;
+  }
+  
+  /* Style the label to look like a button */
+  .question {
+    display: inline-block;
+    padding: 20px 0;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+  }
+
+  .question:focus, .question:hover {
+    color: #E69077;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  /* Hide the answer div by default */
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Display the answer when the associated checkbox is checked */
+  .question-toggle:checked ~ .answer {
+    padding-bottom: 20px;
+    display: block;
+    max-height: 200px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .arrow {
+    align-self: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .question-toggle:checked + .label-wrapper .arrow {
+    transform: rotate(180deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .question-toggle:checked + .label-wrapper .question {
+    font-weight: 700;
+  }
+
+/* ============ DESKTOP QUERIES ============ */
+
+@media screen and (min-width: 1100px) {
+  .main-wrapper {
+    width: 920px;
+    padding: 70px 94px 83px 0;
+    overflow: hidden;
+  }
+
+  .faq-content {
+    font-size: 1rem;
+    width: 45%;
+    margin-left: auto;
+  }
+
+  .faq-heading {
+    margin-top: unset;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+  .main-image, .shadow {
+    display: none;
+  }
+
+  .main-image-lg, .shadow-lg, .box-image {
+    position: absolute;
+    display: unset;
+  }
+
+  .main-image-lg {
+    left: -90px;
+  }
+
+  .shadow-lg {
+    left: -580px;
+    top: -370px
+  }
+
+  .box-imagery {
+    position: absolute;
+  }
+
+  .box-image {
+    top: 140px;
+    left: -130px;
+  }
+}
