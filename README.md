@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/mobilefirst-workflow-flex-grid-e3iQqK-Ip7)
-- Live Site URL: [Add live site URL here](https://x6nenko.github.io/faq-accordion-card-main/)
+- Live Site URL: [Add live site URL here](https://x6nenko.github.io/1-lvl-faq-accordion-card-main/)
 
 ## My process
 
